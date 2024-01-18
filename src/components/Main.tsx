@@ -1,4 +1,6 @@
 import { DataType } from "@/types/types";
+import defaultImg from "../images/oops.png";
+import Image from "next/image";
 
 type Props = {
   data: DataType[];
@@ -11,10 +13,13 @@ function Main({ data }: Props) {
         data.map((item) => (
           <div key={item.title} className="flex w-1/3 flex-wrap">
             <div className="w-full p-6 h-96">
-              <img
+              <Image
+                src={item.url || defaultImg}
                 alt="gallery"
+                width="0"
+                height="0"
+                sizes="100vw"
                 className="block h-full w-full rounded-lg object-cover object-center"
-                src={item.url}
               />
             </div>
           </div>
