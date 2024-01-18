@@ -4,13 +4,13 @@ type Props = {
   data: DataType[];
 };
 
-const Main = ({ data }: Props) => {
+function Main({ data }: Props) {
   return (
     <div className="flex flex-wrap">
       {!!data.length &&
         data.map((item) => (
           <div key={item.title} className="flex w-1/3 flex-wrap">
-            <div className="w-full p-6">
+            <div className="w-full p-6 h-96">
               <img
                 alt="gallery"
                 className="block h-full w-full rounded-lg object-cover object-center"
@@ -21,6 +21,6 @@ const Main = ({ data }: Props) => {
         ))}
     </div>
   );
-};
+}
 
 export default Main;

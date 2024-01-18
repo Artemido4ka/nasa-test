@@ -2,6 +2,7 @@ import { Dispatch, SetStateAction } from "react";
 
 import { CustomDateType } from "@/types/types";
 import CustomCalendar from "./Calendar";
+import Button from "./Button";
 
 type ModeSectionType = {
   isSingleImage: boolean;
@@ -23,18 +24,7 @@ const ModeSection = ({
   return (
     <div className="pl-6 pb-36">
       <h2 className="mt-20 text-4xl">Выберете любую дату</h2>
-
-      <button
-        onClick={handleButton}
-        className="my-10 bg-red-700 text-2xl p-4 rounded-md text-white hover:bg-red-400"
-      >
-        {!isSingleImage ? (
-          <div>Выбрать день</div>
-        ) : (
-          <div>Выбрать промежуток</div>
-        )}
-      </button>
-
+      <Button handleButton={handleButton} isSingleImage={isSingleImage} />
       <>
         {isSingleImage ? (
           <div>
