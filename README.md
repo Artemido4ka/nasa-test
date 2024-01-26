@@ -14,10 +14,10 @@ pnpm dev
 bun dev
 ```
 
-Open [https://artsiom-karenka-nasa-test-beta.vercel.app](https://artsiom-karenka-nasa-test-beta.vercel.app) with your browser to see the result.
-
-OR
-
 Add NEXT_PUBLIC_NASA_API in .env.local file
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+OR
+
+Open [https://artsiom-karenka-nasa-test-beta.vercel.app](https://artsiom-karenka-nasa-test-beta.vercel.app) with your browser to see the result.
